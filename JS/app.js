@@ -51,22 +51,37 @@
 
 //3. weak map and weak set
 
-const ws = new WeakSet();
-const object1 = {};
-const object2 = {};
+// const ws = new WeakSet();
+// const object1 = {};
+// const object2 = {};
 
-ws.add(object1);
-ws.add(object2);
-console.log(ws);
+// ws.add(object1);
+// ws.add(object2);
+// console.log(ws);
 
-console.log(ws.has(object1));
-ws.delete(object1);
-console.log(ws.has(object1));
+// console.log(ws.has(object1));
+// ws.delete(object1);
+// console.log(ws.has(object1));
 
-const wm = new WeakMap();
+// const wm = new WeakMap();
 
-wm.set(object1, 12121);
-console.log(wm.has(object1));
-console.log(wm.get(object1));
-wm.delete(object1);
-console.log(wm.has(object1));
+// wm.set(object1, 12121);
+// console.log(wm.has(object1));
+// console.log(wm.get(object1));
+// wm.delete(object1);
+// console.log(wm.has(object1));
+
+//padStart padEnd,trim,trimStart,trimEnd
+
+// const min = "8";
+// const second = "6";
+// console.log(min.padStart(4, "0"));
+// console.log(second.padEnd(4, "0"));
+
+// let str = "    shofol    ";
+
+// console.log(str.length);
+// // str = str.trim();
+// // str = str.trimStart();
+// str = str.trimEnd();
+// console.log(str.length);
