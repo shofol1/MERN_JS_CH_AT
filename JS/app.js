@@ -85,3 +85,35 @@
 // // str = str.trimStart();
 // str = str.trimEnd();
 // console.log(str.length);
+
+//factory function
+
+// function user(name, age) {
+//   const userObj = {
+//     name: name,
+//     age: age,
+//     walk: function () {
+//       console.log(`${this.name} start walking`);
+//     },
+//   };
+//   return userObj;
+// }
+// const user1 = user("Ashikul", 23);
+
+// const user2 = user("shafol", 24);
+// console.log(user1, user2);
+
+//constructor function
+
+// function User(name, age) {
+//   this.name = name;
+//   this.age = age;
+//   this.walk = function () {
+//     console.log(`${this.name} is walking`);
+//   };
+// }
+
+// const user1 = new User("Ashikul", 23);
+// const user2 = new User("shafol", 23);
+
+// console.log(user1, user2);
