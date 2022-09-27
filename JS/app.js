@@ -117,3 +117,27 @@
 // const user2 = new User("shafol", 23);
 
 // console.log(user1, user2);
+
+const homeAddress1 = homeAddress("A", "B", "C");
+const homeAddress2 = homeAddress("x", "y", "z");
+
+const homeAddress3 = new HomeAddress("D", "E", "F");
+
+// factory function
+function homeAddress(street, city, address) {
+  return {
+    street,
+    city,
+    address,
+  };
+}
+// constructor function
+function HomeAddress(street, city, address) {
+  this.street = street;
+  this.city = city;
+  this.address = address;
+}
+
+console.log(homeAddress1);
+console.log(homeAddress2);
+console.log(homeAddress3);
