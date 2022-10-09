@@ -118,26 +118,121 @@
 
 // console.log(user1, user2);
 
-const homeAddress1 = homeAddress("A", "B", "C");
-const homeAddress2 = homeAddress("x", "y", "z");
+// const homeAddress1 = homeAddress("A", "B", "C");
+// const homeAddress2 = homeAddress("x", "y", "z");
 
-const homeAddress3 = new HomeAddress("D", "E", "F");
+// const homeAddress3 = new HomeAddress("D", "E", "F");
 
 // factory function
-function homeAddress(street, city, address) {
-  return {
-    street,
-    city,
-    address,
-  };
-}
+// function homeAddress(street, city, address) {
+//   return {
+//     street,
+//     city,
+//     address,
+//   };
+// }
 // constructor function
-function HomeAddress(street, city, address) {
-  this.street = street;
-  this.city = city;
-  this.address = address;
-}
+// function HomeAddress(street, city, address) {
+//   this.street = street;
+//   this.city = city;
+//   this.address = address;
+// }
 
-console.log(homeAddress1);
-console.log(homeAddress2);
-console.log(homeAddress3);
+// console.log(homeAddress1);
+// console.log(homeAddress2);
+// console.log(homeAddress3);
+
+//asyncronus
+
+// console.log("before");
+// function fetchData() {
+//   setTimeout(function () {
+//     console.log("hi i am shafol");
+//   }, 2000);
+// }
+// const fetchD = fetchData();
+// console.log(fetchD);
+// console.log("after");
+
+//practise regular expresion
+
+const regEx = /shafol/gi;
+const str = "hi i am Shafol shafol";
+
+//test
+// console.log(regEx.test(str));
+
+//source
+// console.log(regEx.source);
+
+//exec
+// console.log(regEx.exec(str));
+
+//search
+// console.log(str.search(regEx));
+
+//replace
+// console.log(str.replace(regEx, "Sumon")); //if there is a repeated word that time only replace the first word but when we use gi that time both word will replaced
+
+//set practise
+
+// const set = new Set();
+
+// set.add(100);
+// set.add(200);
+// set.add(300);
+// console.log(set);
+
+// console.log(set.size);
+
+// set.delete(100);
+// console.log(set);
+
+// for (let el of set) {
+//   console.log(el);
+// }
+
+// set.forEach((element, index, array) => {
+//   console.log(element, index, array);
+// });
+
+// const name = ["shafol", "sumon", "shanto"];
+
+// name.map((na) => set.add(na));
+// console.log(set);
+
+//map practise
+
+// const map = new Map();
+// console.log(map);
+// map.set(0, "shafol"); //two inpue-->key,value
+// map.set(1, "Sumon"); //two inpue-->key,value
+// map.set(2, "Shanto"); //two inpue-->key,value
+// console.log(map);
+// map.forEach((element, key, array) => {
+//   console.log(element, key, array);
+// });
+// console.log(map.size);
+// map.delete(1);
+// console.log(map);
+
+// map.clear();
+// console.log(map);
+
+// practise of weakset and weakmap
+// we only use object
+
+// const ws = new WeakSet();
+const object1 = { name: "shafol", roll: "1" };
+const object2 = { name: "Sumon", roll: "2" };
+// ws.add(object1);
+// ws.add(object2);
+// ws.delete(object1);
+// console.log(ws);
+// console.log(ws.has(object1));
+// const wm = new WeakMap();
+// console.log(wm);
+// wm.set(object1, 1111); //take an object and value as a input
+// console.log(wm);
+// console.log(wm.has(object1));//return booloean
+// console.log(wm.get(object1));//will return the value
